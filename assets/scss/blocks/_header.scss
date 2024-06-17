@@ -1,0 +1,57 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding-block: 40px;
+    z-index: 4;
+    border-block-end: 1px solid transparent;
+    transition: var(--transition-1);
+
+    @include mobile-l {
+        top: 51px;
+    }
+
+    &__content {
+        padding-inline: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    &.active {
+        padding-block: 20px;
+        background-color: var(--eerie-black-4);
+        border-color: var(--black-alpha-15);
+
+        @include mobile-l {
+            top: 0;
+        }
+
+        &.hide {
+            transform: translateY(-100%);
+            transition-delay: 250ms;
+        }
+    }
+
+    &__find-table {
+        display: none;
+        
+        @include mobile-l {
+            display: block;
+            margin-inline-start: auto;
+        }
+
+        @include desktop {
+            margin-inline-start: 0;
+        }
+    }
+
+    .container {
+        @include desktop {
+            min-width: unset;
+        }
+    }
+}

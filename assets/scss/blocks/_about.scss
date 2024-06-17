@@ -1,0 +1,109 @@
+.about {
+    @include section;
+
+    &__container {
+        display: grid;
+        gap: 120px;
+
+        @include mobile-l {
+            gap: 80px;
+        }
+
+        @include tablet-l {
+            grid-template-columns: 0.7fr 1fr;
+            gap: 30px;
+        }
+
+       
+    }
+
+    &__content {
+        @include desktop-l {
+            padding-inline-end: 90px;
+        }
+    }
+
+    &__subtitle {
+        @include subtitle-sep;
+    }
+
+    &__txt {
+        margin-block: 15px 30px;
+        
+        @include mobile-l {
+            max-width: 420px;
+            margin-inline: auto;
+        }
+    }
+
+    &__contact-label {
+        font-weight: var(--weight-bold);
+    }
+
+    &__contact-num {
+        color: var(--gold-crayola);
+        margin-inline: auto;
+        position: relative;
+        max-width: max-content;
+
+        @include hover-stroke;
+    }
+
+    &__btn {
+        margin-inline: auto;
+        margin-block-start: 26px;
+    }
+
+    &__banner {
+        position: relative;
+        margin-block-end: 120px;
+    }
+
+    &__img {
+        width: 100%;
+
+        &--1 {
+            padding-inline-start: 50px;
+
+            @include mobile-l {
+                padding-inline-start: 90px;
+            }
+        }
+
+        &-holder {
+            position: absolute;
+            bottom: -120px;
+            left: 0;
+            width: 150px;
+            padding-block: 50px;
+            z-index: 1;
+
+            &::before {
+                @include before-eff;
+                bottom: 0;
+            }
+
+            @include mobile-l {
+                width: 285px;
+            }
+        }
+    }
+
+    &__img-anim-holder {
+        position: absolute;
+        top: -65px;
+        right: 0;
+        overflow: hidden;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url(../images/badge-2-bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: rotate360 15s linear infinite;
+        }
+    }
+}

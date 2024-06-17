@@ -1,0 +1,45 @@
+.display-1,
+.headline-1,
+.headline-2,
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  color: var(--white);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-2);
+}
+
+.display-1 {
+    font-size: var(--fontSize-display-1);
+    line-height: var(--lineHeight-1);
+}
+
+.headline-1 { font-size: var(--fontSize-headline-1); }
+
+.headline-2 {
+  font-size: var(--fontSize-headline-2);
+  line-height: var(--lineHeight-6);
+}
+
+@for $i from 1 through 4 {
+    .title-#{$i} {
+        font-size: var(--fontSize-title-#{$i});
+    }
+}
+
+@for $i from 1 through 4 {
+    .body-#{$i} {
+        font-size: var(--fontSize-body-#{$i});
+        @if $i == 1 {
+            line-height: var(--lineHeight-6);
+        } @else if $i == 2 {
+            line-height: var(--lineHeight-4);
+        }
+    }
+}
+
+.label-1 { font-size: var(--fontSize-label-1); }
+
+.label-2 { font-size: var(--fontSize-label-2); }

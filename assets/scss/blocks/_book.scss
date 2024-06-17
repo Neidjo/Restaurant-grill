@@ -1,0 +1,89 @@
+.book {
+
+    &__txt {
+        margin-block-end: 40px;
+
+        &-tel {
+            display: inline;
+            color: var(--gold-crayola);
+        }
+    }
+
+    &__wrapper {
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+
+            &:nth-child(4) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        margin-block-end: 20px;
+    }
+
+    &__person {
+
+        &-icon {
+            left: 15px;
+        }
+
+        &-txt {
+            margin-block-end: 0;
+            padding-inline-start: 40px;
+            appearance: none;
+            cursor: pointer;
+        }
+    }
+
+    &__date {
+        
+        &-icon {
+            left: 15px;
+        }
+
+        &-txt {
+            text-transform: uppercase;
+            padding-inline-end: 10px;
+
+            margin-block-end: 0;
+            padding-inline-start: 40px;
+            appearance: none;
+            cursor: pointer;
+        }
+    }
+
+    &__time {
+
+        &-icon {
+            left: 15px;
+        }
+
+        &-txt {
+            margin-block-end: 0;
+            padding-inline-start: 40px;
+            appearance: none;
+            cursor: pointer;
+        }
+    }
+
+    &__chevron-icon {
+        right: 10px;
+    }
+
+    &__message {
+        resize: none;
+        height: 140px;
+        padding-block: 20px;
+        line-height: var(--lineHeight-1);
+    }
+
+    &__btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}

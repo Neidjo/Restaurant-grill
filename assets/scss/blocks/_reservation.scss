@@ -1,0 +1,27 @@
+.reservation {
+     
+    &__form {
+        background-color: var(--smoky-black-2);
+        margin-block-start: -270px;
+
+        @include tablet-l {
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+        }
+
+        &--left,
+        &--right {
+            padding: 40px 20px 30px;
+
+            @include desktop {
+                padding: 75px 60px;
+            }
+        }
+
+        &--right {
+            background-image: url(../images/form-pattern.png);
+            background-position: top left;
+            background-repeat: repeat;
+        }
+    }
+}

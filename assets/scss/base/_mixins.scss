@@ -1,0 +1,95 @@
+@mixin separator {
+    display: block;
+    width: 8px;
+    aspect-ratio: 1;
+    border: 1px solid var(--gold-crayola);
+    rotate: 45deg;
+}
+
+@mixin hover-gold {
+    @include hover {
+        color: var(--gold-crayola);
+    }
+}
+
+@mixin hover-stroke {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        height: 5px;
+        border-block: 1px solid var(--gold-crayola);
+        transform: scaleX(0.2);
+        opacity: 0;
+        transition: var(--transition-2);
+    }
+
+    @include hover {
+        &::after {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin subtitle-sep {
+    position: relative;
+    color: var(--gold-crayola);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-2);
+    margin-block-end: 12px;
+
+    &::after {
+        content: url(../images/separator.svg);
+        display: block;
+        width: 100px;
+        margin-inline: auto;
+        margin-block-start: 5px;
+    }
+}
+
+@mixin section {
+    position: relative;
+    padding-block: var(--section-space);
+    overflow: hidden;
+    z-index: 1;
+}
+
+@mixin before-eff {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url(../images/img-pattern.svg);
+    z-index: -1;
+    background-repeat: repeat;
+}
+
+@mixin badge {
+    background-color: var(--gold-crayola);
+    color: var(--eerie-black-1);
+    font-family: var(--fontFamily-forum);
+    max-width: max-content;
+    line-height: var(--lineHeight-6);
+    text-transform: uppercase;
+    padding-inline: 10px;
+    margin-block-start: 10px;
+}

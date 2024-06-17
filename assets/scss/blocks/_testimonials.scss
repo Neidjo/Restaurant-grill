@@ -1,0 +1,51 @@
+.testimonials {
+    padding-block: var(--section-space);
+    overflow: hidden;
+    background-image: url(../images/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block-end: 340px;
+    position: static;
+
+    &__quote {
+        font-size: 7rem;
+        font-family: var(--fontFamily-forum);
+        line-height: 0.7em;
+    }
+
+    &__txt {
+        @include tablet-l {
+            min-width: 910px;
+            margin-inline: auto;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        margin-block: 40px 50px;
+    }
+
+    &__separator {
+        animation: rotate360 15s linear infinite;
+    }
+
+    &__author {
+
+        &-img {
+            margin-inline: auto;
+            border-radius: var(--radius-circle);
+            margin-block-end: 15px;
+        }
+
+        &-name {
+            color: var(--gold-crayola);
+            font-weight: var(--weight-bold);
+            text-transform: uppercase;
+            letter-spacing: var(--letterSpacing-3);
+        }
+    }
+}

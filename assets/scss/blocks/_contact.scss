@@ -1,0 +1,38 @@
+.contact {
+
+    &__title {
+        margin-block-end: 40px;
+    }
+
+    &__txt {
+        font-weight: var(--weight-bold);
+    }
+
+    &__num {
+        color: var(--gold-crayola);
+        position: relative;
+        max-width: max-content;
+        margin-inline: auto;
+
+        @include hover-stroke;
+
+        @include mobile-l {
+            --fontSize-body-1: 3rem;
+        }
+    }
+
+    &__separator {
+        margin: 20px auto;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__label {
+        margin-block-end: 5px;
+        font-weight: var(--weight-bold);
+    }
+}

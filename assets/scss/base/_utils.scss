@@ -1,0 +1,103 @@
+.container {
+    padding-inline: 16px;
+}
+
+.separator {
+    width: 8px;
+    aspect-ratio: 1;
+    border: 1px solid var(--gold-crayola);
+    rotate: 45deg;
+}
+
+.btn {
+    position: relative;
+    color: var(--gold-crayola);
+    font-size: var(--fontSize-label-2);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-5);
+    max-width: max-content;
+    border: 2px solid var(--gold-crayola);
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+    transition: var(--transition-1);
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200%;
+        height: 200%;
+        border-radius: var(--radius-circle);
+        background-color: var(--gold-crayola);
+        transition: var(--transition-2);
+        z-index: -1;
+      }
+
+      @include hover {
+        color: var(--black);
+        &::before {
+            bottom: -50%;
+        }
+      }
+}
+
+.btn--sec {
+    background-color: var(--gold-crayola);
+    color: var(--black);
+
+    &::before {
+        background-color: var(--smoky-black-1);
+    }
+
+    @include hover {
+        color: var(--white);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid-list {
+    display: grid;
+    gap: 40px;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+.input-field {
+    background-color: var(--eerie-black-2);
+    color: var(--white);
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid var(--white-alpha-10);
+    margin-block-end: 20px;
+    outline: none;
+    transition: border-color var(--transition-2);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    --ionicon-stroke-width: 50px;
+    pointer-events: none;
+}
+
+.grey {
+    color: var(--quick-silver);
+        line-height: var(--lineHeight-3);
+}
+
+.hidden-mobile {
+    @include mobile-l {
+        display: none !important;
+    }
+}

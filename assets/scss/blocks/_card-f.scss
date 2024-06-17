@@ -1,0 +1,23 @@
+.card-f {
+    background-color: var(--eerie-black-3);
+    padding: 30px 20px 40px;
+
+    &__holder {
+        margin-inline: auto;
+        max-width: max-content;
+        transition: var(--transition-2);
+
+        @include hover {
+            transform:scale(1.2);
+        }
+    }
+
+    &__title {
+        margin-block: 20px;
+    }
+
+    &__txt {
+        color: var(--quick-silver);
+        line-height: var(--lineHeight-6);
+    }
+}

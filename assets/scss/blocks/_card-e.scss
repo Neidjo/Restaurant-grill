@@ -1,0 +1,70 @@
+.card-e {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+        transform: skewX(-0.08turn) translateX(-180%);;
+    }
+
+    @include hover {
+        &::after {
+        transform: skewX(-0.08turn) translateX(275%);
+        transition: var(--transition-3);
+        }
+    }
+
+    @include hover {
+        &:hover {
+            & .card-e__img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__banner {
+        aspect-ratio: 350 / 450;
+        overflow: hidden;
+        background-color: var(--eerie-black-4);
+    }
+
+    &__img {
+        @include img-cover;
+        transition: var(--transition-2);
+    }
+
+    &__publish {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        padding: 5px 10px;
+        color: var(--gold-crayola);
+        background-color: var(--black);
+        font-weight: var(--weight-bold);
+        letter-spacing: var(--letterSpacing-1);
+        line-height: 14px;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 35px 35px 25px;
+        background-image: var(--gradient-1);
+    }
+
+    &__subtitle {
+        color: var(--gold-crayola);
+        text-transform: uppercase;
+        font-weight: var(--weight-bold);
+        letter-spacing: var(--letterSpacing-2);
+        margin-block-end: 5px;
+    }
+}

@@ -1,0 +1,30 @@
+.open {
+    padding: 12px;
+    padding-inline-end: 0;
+
+    @include desktop {
+        display: none;
+    }
+
+    &__line {
+        width: 30px;
+        height: 2px;
+        background-color: var(--white);
+        margin-block: 4px;
+        transform-origin: left;
+        animation: menuBtn 400ms ease-in-out alternate infinite;
+
+        @keyframes menuBtn {
+            0% {transform: scaleX(1);}
+            100% {transform: scaleX(0.5);}
+        }
+
+        &-2 {
+            animation-delay: 150ms;
+        }
+
+        &-3 {
+            animation-delay: 300ms;
+        }
+    }
+}
