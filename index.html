@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilli - Amazing & Delicious Food</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="preload">
+        <div class="preload__circle"></div>
+        <p class="preload__text">Grilli</p>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar__item">
+                <div class="topbar__icon icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="topbar__txt">
+                    Restaurant St, Delicious City, London 9578, UK
+                </span>
+            </address>
+            <div class="separator"></div>
+            <div class="topbar__item topbar__item--2">
+                <div class="topbar__icon icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="topbar__txt">
+                    Daily : 8.00 am to 10.00 pm
+                </span>
+            </div>
+            <a href="tel:+11234567890" class="topbar__item link">
+                <div class="topbar__icon icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="topbar__txt">
+                    +1 123 456 7890
+                </span>
+            </a>
+            <div class="separator"></div>
+            <a href="mailto:booking@restaurant.com" class="topbar__item link">
+                <div class="topbar__icon icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="topbar__txt">
+                    booking@restaurant.com
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__content container">
+            <a href="#" class="header__logo logo">
+                <img class="header__logo-image logo-image" src="./assets/images/logo.svg" alt="Grilli - Home">
+            </a>
+            <nav class="nav">
+                <button class="nav__close close">
+                    <ion-icon class="nav__close-icon" name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <a href="#" class="nav__logo logo">
+                    <img class="nav__logo-image logo-image" src="./assets/images/logo.svg" alt="Grilli - Home">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <span class="nav__link-txt">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <span class="nav__link-txt">Menus</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <span class="nav__link-txt">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <span class="nav__link-txt">Our Chefs</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <span class="nav__link-txt">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__info text-center">
+                    <p class="nav__headline headline-1">Visit Us</p>
+                    <address class="nav__address body-4">
+                        Restaurant St, Delicious City, <br>
+                        London 9578, UK
+                    </address>
+                    <p class="nav__time body-4">Open: 9.30 am - 2.30pm</p>
+                    <a href="mailto:booking@grilli.com" class="nav__mail body-4">booking@grilli.com</a>
+                    <div class="nav__separator separator"></div>
+                    <p class="nav__contact-label">Booking Request</p>
+                    <a href="tel:+88123123456" class="nav__contact body-1">+88-123-123456</a>
+                </div>
+            </nav>
+            <a href="#" class="header__find-table btn btn--sec">Find A Table</a>
+            <button class="header__open-nav open">
+                <span class="open__line open__line-1"></span>
+                <span class="open__line open__line-2"></span>
+                <span class="open__line open__line-3"></span>
+            </button>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section class="hero text-center">
+            <ul class="slider">
+                <li class="slider__item active">
+                    <div class="slider__bg">
+                        <img src="./assets/images/hero-slider-1.jpg" alt="Food image" class="slider__bg-img">
+                    </div>
+                    <p class="slider__subtitle label-2 slider-reveal">
+                        Traditional & Hygine
+                    </p>
+                    <h1 class="slider__title display-1 slider-reveal">
+                        For the love of <br> delicious food
+                    </h1>
+                    <p class="slider__desc body-2 slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+                    <a href="#" class="slider__btn btn slider-reveal">View Our Menu</a>
+                </li>
+                <li class="slider__item">
+                    <div class="slider__bg">
+                        <img src="./assets/images/hero-slider-2.jpg" alt="Food image" class="slider__bg-img">
+                    </div>
+                    <p class="slider__subtitle label-2 slider-reveal">
+                        delightful experience
+                    </p>
+                    <h1 class="slider__title display-1 slider-reveal">
+                        Flavors Inspired by <br>
+                        the Seasons
+                    </h1>
+                    <p class="slider__desc body-2 slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+                    <a href="#" class="slider__btn btn slider-reveal">View Our Menu</a>
+                </li>
+                <li class="slider__item">
+                    <div class="slider__bg">
+                        <img src="./assets/images/hero-slider-3.jpg" alt="Food image" class="slider__bg-img">
+                    </div>
+                    <p class="slider__subtitle label-2 slider-reveal">
+                        amazing & delicious
+                    </p>
+                    <h1 class="slider__title display-1 slider-reveal">
+                        Where every flavor <br>
+                        tells a story
+                    </h1>
+                    <p class="slider__desc body-2 slider-reveal">
+                        Come with family & feel the joy of mouthwatering food
+                    </p>
+                    <a href="#" class="slider__btn btn slider-reveal">View Our Menu</a>
+                </li>
+            </ul>
+            <button class="slider__btn slider__btn--left"></button>
+            <button class="slider__btn slider__btn--right"></button>
+            <a href="#" class="hero__btn">
+                <img src="./assets/images/hero-icon.png" alt="booking" class="hero__btn-img">
+                <span class="hero__btn-txt label-2 text-xenter">Book A Table</span>
+            </a>
+        </section>
+
+        <!-- SERVICE -->
+        <section class="service text-center">
+            <div class="container">
+                <p class="service__subtitle label-2">Flavors For Royalty</p>
+                <h2 class="service__title headline-1">We Offer Top Notch</h2>
+                <p class="service__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+                    standard dummy text ever.
+                </p>
+                <ul class="service__list grid-list">
+                    <li class="service__item">
+                        <div class="card service__card">
+                            <a href="#" class="card__link card__link-shine">
+                                <figure class="card__img-holder">
+                                    <img src="./assets/images/service-1.jpg" alt="Breakfast" class="card__img">
+                                </figure>
+                            </a>
+                            <div class="card__content">
+                                <h3 class="card__title title-4">Breakfast</h3>
+                                <a href="" class="card__btn txt-btn label-2">View Menu</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <div class="card service__card">
+                            <a href="#" class="card__link card__link-shine">
+                                <figure class="card__img-holder">
+                                    <img src="./assets/images/service-2.jpg" alt="Breakfast" class="card__img">
+                                </figure>
+                            </a>
+                            <div class="card__content">
+                                <h3 class="card__title title-4">Appetizers</h3>
+                                <a href="" class="card__btn txt-btn label-2">View Menu</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <div class="card service__card">
+                            <a href="#" class="card__link card__link-shine">
+                                <figure class="card__img-holder">
+                                    <img src="./assets/images/service-3.jpg" alt="Breakfast" class="card__img">
+                                </figure>
+                            </a>
+                            <div class="card__content">
+                                <h3 class="card__title title-4">Drinks</h3>
+                                <a href="" class="card__btn txt-btn label-2">View Menu</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about text-center">
+            <div class="about__container container">
+                <div class="about__content">
+                    <p class="about__subtitle label-2">Our Story</p>
+                    <h2 class="about__title headline-1">Every Fla vor Tells a Story</h2>
+                    <p class="about__txt">
+                        Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+                        industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
+                        it to make a type specimen book It has survived not only five centuries, but also the leap into.
+                    </p>
+                    <div class="about__contact-label">Book Through Call</div>
+                    <a href="tel:+804001234567" class="about__contact-num body-1">+80 (400) 123 4567</a>
+                    <a href="#" class="about__btn btn">Read More</a>
+                </div>
+                <figure class="about__banner">
+                    <img src="./assets/images/about-banner.jpg" alt="banner image" class="about__img--1 about__img">
+                    <div class="about__img-holder">
+                        <img src="./assets/images/about-abs-image.jpg" alt="banner image" class="about__img--2 about__img">
+                    </div>
+                    <div class="about__img-anim-holder">
+                        <img src="./assets/images/badge-2.png" alt="year" class="about__img-anim">
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SPECIAL -->
+        <section class="special text-center">
+            <div class="special__banner">
+                <img src="./assets/images/special-dish-banner.jpg" alt="special dish" class="special__img">
+            </div>
+            <div class="special__content">
+                <div class="container special__container">
+                    <img src="./assets/images/badge-1.png" alt="icon" class="special__icon">
+                    <p class="special__subtitle label-2">Special Dish</p>
+                    <h2 class="special__title headline-1">Lobster Tortellini</h2>
+                    <p class="special__txt">
+                        Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+                        industrys standard dummy text ever since the when an unknown printer took a galley of type.
+                    </p>
+                    <div class="special__price">
+                        <del class="special__price-old body-3">$40.00</del>
+                        <span class="special__price-new body-1">$20.00</span>
+                    </div>
+                    <a href="#" class="special__btn btn">View All Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu">
+            <div class="container">
+                <p class="menu__subtitle label-2 text-center">Special Selection</p>
+                <h2 class="menu__title headline-1 text-center">Delicious Menu</h2>
+                <ul class="menu__list grid-list">
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-1.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Greek Salad</a>
+                                    </h3>
+                                    <span class="product__badge label-1">Seasonal</span>
+                                    <span class="product__price title-2">$25.50</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                                      </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-2.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Lasagne</a>
+                                    </h3>
+                                    <span class="product__price title-2">$40.00</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices                    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-3.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Butternut Pumpkin</a>
+                                    </h3>
+                                    <span class="product__price title-2">$10.00</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-4.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Tokusen Wagyu</a>
+                                    </h3>
+                                    <span class="product__badge label-1">New</span>
+                                    <span class="product__price title-2">$39.00</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-5.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Olivas Rellenas</a>
+                                    </h3>
+                                    <span class="product__price title-2">$25.00</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="product">
+                            <figure class="product__banner">
+                                <img src="./assets/images/menu-6.png" alt="product" class="product__img">
+                            </figure>
+                            <div class="product__content">
+                                <div class="product__top">
+                                    <h3 class="product__title title-3">
+                                        <a href="#" class="product__title-link">Opu Fish</a>
+                                    </h3>
+                                    <span class="product__badge label-1">Seasonal</span>
+                                    <span class="product__price title-2">$49.00</span>
+                                </div>
+                                <div class="product__bottom">
+                                    <p class="product__txt label-1">
+                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <p class="menu__txt text-center">
+                    During winter daily from 
+                    <span class="menu__txt--gold">7:00 pm</span>
+                    to
+                    <span class="menu__txt--gold">9:00 pm</span>
+                </p>
+                <a href="#" class="menu__btn btn">View All Menu</a>
+            </div>
+            <img src="./assets/images/shape-5.png" alt="" class="menu__shape menu__shape--1">
+            <img src="./assets/images/shape-6.png" alt="" class="menu__shape menu__shape--2">
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials text-center">
+            <div class="container">
+                <div class="testimonials__quote">”</div>
+                <p class="testimonials__txt headline-2">
+                    I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
+                    extraordinary.
+                </p>
+                <div class="testimonials__wrapper">
+                    <div class="testimonials__separator separator"></div>
+                    <div class="testimonials__separator separator"></div>
+                    <div class="testimonials__separator separator"></div>
+                </div>
+                <div class="testimonials__author">
+                    <img src="./assets/images/testi-avatar.jpg" alt="Sam Jhonson" class="testimonials__author-img" loading="lazy">
+                    <p class="testimonials__author-name label-2">Sam Jhonson</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVATION -->
+        <section class="reservation">
+            <div class="container">
+                <div class="reservation__form">
+                    <div class="reservation__form--left">
+                        <form action class="reservation__book book">
+                            <h2 class="book__title headline-1 text-center">Online Reservation</h2>
+                            <p class="book__txt text-center">Booking request
+                                <a href="tel:+88123123456" class="book__txt-tel">+88-123-123456</a>
+                                or fill out the order form
+                            </p>
+                            <div class="book__wrapper">
+                                <input type="text" name="name" placeholder="Your Name" wfd-id="id0" class="input-field book__name">
+                                <input type="tel" name="phone" placeholder="Phone Number" wfd-id="id1" class="input-field book__tel">
+                            </div>
+                            <div class="book__wrapper">
+                                <div class="book__person book__icon">
+                                    <ion-icon name="person-outline" aria-hidden="true" class="book__person-icon form-icon"></ion-icon>
+                                    <select name="person" class="input-field book__person-txt">
+                                        <option value="1-person" class="book__option">1 Person</option>
+                                        <option value="2-person" class="book__option">2 Person</option>
+                                        <option value="3-person" class="book__option">3 Person</option>
+                                        <option value="4-person" class="book__option">4 Person</option>
+                                        <option value="5-person" class="book__option">5 Person</option>
+                                        <option value="6-person" class="book__option">6 Person</option>
+                                        <option value="7-person" class="book__option">7 Person</option>
+                                    </select>
+                                    <ion-icon class="book__chevron-icon form-icon" name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div class="book__date book__icon">
+                                    <ion-icon class="book__date-icon form-icon" name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                                    <input type="date" name="book-date" wfd-id="id2" class="input-field book__date-txt">
+                                    <ion-icon class="book__chevron-icon form-icon" name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div class="book__time book__icon">
+                                    <ion-icon class="book__time-icon form-icon" name="time-outline" aria-hidden="true"></ion-icon>
+                                    <select name="time" class="input-field book__time-txt">
+                                        <option value="08:00am" class="book__option">08 : 00 am</option>
+                                        <option value="09:00am" class="book__option">09 : 00 am</option>
+                                        <option value="010:00am" class="book__option">10 : 00 am</option>
+                                        <option value="011:00am" class="book__option">11 : 00 am</option>
+                                        <option value="012:00am" class="book__option">12 : 00 am</option>
+                                        <option value="01:00pm" class="book__option">01 : 00 pm</option>
+                                        <option value="02:00pm" class="book__option">02 : 00 pm</option>
+                                        <option value="03:00pm" class="book__option">03 : 00 pm</option>
+                                        <option value="04:00pm" class="book__option">04 : 00 pm</option>
+                                        <option value="05:00pm" class="book__option">05 : 00 pm</option>
+                                        <option value="06:00pm" class="book__option">06 : 00 pm</option>
+                                        <option value="07:00pm" class="book__option">07 : 00 pm</option>
+                                        <option value="08:00pm" class="book__option">08 : 00 pm</option>
+                                        <option value="09:00pm" class="book__option">09 : 00 pm</option>
+                                        <option value="10:00pm" class="book__option">10 : 00 pm</option>
+                                    </select>
+                                    <ion-icon class="book__chevron-icon form-icon" name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+                            </div>
+                            <textarea name="message" placeholder="Message" autocomplete="off" class="input-field book__message"></textarea>
+                            <button type="submit" class="book__btn btn btn--sec">Book A Table</button>
+                        </form>
+                    </div>
+                    <div class="reservation__form--right">
+                        <div class="reservation__contact contact text-center">
+                            <h2 class="contact__title headline-1 text-center">Contact Us</h2>
+                            <p class="contact__txt">Booking Request</p>
+                            <a href="tel:+88123123456" class="body-1 contact__num">+88-123-123456</a>
+                            <div class="contact__separator separator"></div>
+                            <div class="contact__info">
+                                <div class="contact__wrapper">
+                                    <p class="contact__label">Location</p>
+                                    <address class="contact__address grey body-4">
+                                        Restaurant St, Delicious City, <br>London 9578, UK
+                                    </address>
+                                </div>
+                                <div class="contact__wrapper">
+                                    <p class="contact__label">Lunch Time</p>
+                                    <p class="contact__lunch grey body-4">
+                                        Monday to Sunday <br>11.00 am - 2.30pm
+                                    </p>
+                                </div>
+                                <div class="contact__wrapper">
+                                    <p class="contact__label">Dinner Time</p>
+                                    <p class="contact__dinner grey body-4">
+                                        Monday to Sunday <br>05.00 pm - 10.00pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features text-center">
+            <div class="container">
+                <p class="features__subtitle label-2">Why Choose Us</p>
+                <h2 class="features__title headline-1">Our Strength</h2>
+                <ul class="features__list grid-list">
+                    <li class="features__item">
+                        <div class="features__card-f card-f">
+                            <div class="card-f__holder">
+                                <img src="./assets/images/features-icon-1.png" alt="Hygienic Food" loading="lazy" class="card-f__img">
+                            </div>
+                            <h3 class="card-f__title title-2">Hygienic Food</h3>
+                            <p class="card-f__txt label-1">
+                                Lorem Ipsum is simply dummy printing and typesetting.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__card-f card-f">
+                            <div class="card-f__holder">
+                                <img src="./assets/images/features-icon-2.png" alt="Fresh Environment" loading="lazy" class="card-f__img">
+                            </div>
+                            <h3 class="card-f__title title-2">Fresh Environment</h3>
+                            <p class="card-f__txt label-1">
+                                Lorem Ipsum is simply dummy printing and typesetting.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__card-f card-f">
+                            <div class="card-f__holder">
+                                <img src="./assets/images/features-icon-3.png" alt="Skilled Chefs" loading="lazy" class="card-f__img">
+                            </div>
+                            <h3 class="card-f__title title-2">Skilled Chefs</h3>
+                            <p class="card-f__txt label-1">
+                                Lorem Ipsum is simply dummy printing and typesetting.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__card-f card-f">
+                            <div class="card-f__holder">
+                                <img src="./assets/images/features-icon-4.png" alt="Event & Party" loading="lazy" class="card-f__img">
+                            </div>
+                            <h3 class="card-f__title title-2">Event & Party</h3>
+                            <p class="card-f__txt label-1">
+                                Lorem Ipsum is simply dummy printing and typesetting.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EVENT -->
+        <section class="event text-center">
+            <div class="container">
+                <p class="event__subtitle label-2">Recent Updates</p>
+                <h2 class="event__title headline-1">Upcoming Event</h2>
+                <ul class="event__list grid-list">
+                    <li class="event__item">
+                        <div class="card-e">
+                            <div class="card-e__banner">
+                                <img src="./assets/images/event-1.jpg" loading="lazy" alt="event image" class="card-e__img">
+                                <time class="card-e__publish label-2" datetime="2024-04-25">25/04/2024</time>
+                            </div>
+                            <div class="card-e__content">
+                                <p class="card-e__subtitle label-2">Food, Flavour</p>
+                                <h3 class="card-e__title title-2">
+                                    Flavour so good you’ll try to eat with your eyes.
+                                  </h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event__item">
+                        <div class="card-e">
+                            <div class="card-e__banner">
+                                <img src="./assets/images/event-2.jpg" loading="lazy" alt="event image" class="card-e__img">
+                                <time class="card-e__publish label-2" datetime="2024-04-16">16/04/2024</time>
+                            </div>
+                            <div class="card-e__content">
+                                <p class="card-e__subtitle label-2">Healthy Food</p>
+                                <h3 class="card-e__title title-2">
+                                    Flavour so good you’ll try to eat with your eyes.                
+                                  </h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event__item">
+                        <a href="#" class="card-e">
+                            <div class="card-e__banner">
+                                <img src="./assets/images/event-3.jpg" loading="lazy" alt="event image" class="card-e__img">
+                                <time class="card-e__publish label-2" datetime="2024-03-28">28/03/2024</time>
+                            </div>
+                            <div class="card-e__content">
+                                <p class="card-e__subtitle label-2">Recipie</p>
+                                <h3 class="card-e__title title-2">
+                                    Flavour so good you’ll try to eat with your eyes.
+                                  </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="event__btn btn">View Our Blog</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="footer__top grid-list">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo logo">
+                        <img src="./assets/images/logo.svg" alt="Logo" class="footer__logo-img log-img">
+                    </a>
+                    <address class="footer__address body-4 grey">
+                        Restaurant St, Delicious City, London 9578, UK
+                      </address>
+                    <a href="mailto:booking@grill.com" class="footer__mail body-4 grey">
+                        booking@grilli.com
+                    </a>
+                    <a href="tel:+88123123456" class="footer__tel body-4 grey">
+                        Booking Request : +88-123-123456
+                    </a>
+                    <p class="footer__time body-4 grey">
+                        Open : 09:00 am - 01:00 pm
+                      </p>
+                    <div class="footer__wrapper">
+                        <div class="footer__separator separator"></div>
+                        <div class="footer__separator separator"></div>
+                        <div class="footer__separator separator"></div>
+                    </div>
+                    <p class="footer__title title-1">Get News & Offers</p>
+                    <p class="footer__subtitle label-1 grey">
+                        Subscribe us & Get
+                        <span class="footer__span">25% Off.</span>
+                    </p>
+                    <form action class="footer__form">
+                        <div class="footer__mail-f book__icon">
+                            <ion-icon name="mail-outline" aria-hidden="true" class="footer__mail-f-icon form-icon"></ion-icon>
+                            <input type="email" name="email" placeholder="Your Email" wfd-id="id3" class="input-field footer__name">
+                        </div>
+                        <button type="submit" class="footer__btn btn btn--sec">Subscribe</button>
+                    </form>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Menus</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">About Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Our Chefs</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Contact</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Facebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Instagram</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Twitter</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Youtube</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link label-2">Google Map</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright grey">
+                    © 2024 Grilli. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
